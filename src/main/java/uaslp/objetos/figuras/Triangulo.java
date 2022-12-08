@@ -30,7 +30,15 @@ public class Triangulo extends Figura{
         this.altura = altura;
     }
 
-    public double getArea() {
+    public double getArea() throws BaseNoProvistaException,AlturaNoProvistaException{
+
+        if(base == 0){
+            throw new BaseNoProvistaException();
+        }
+        if(altura == 0){
+            throw new AlturaNoProvistaException();
+        }
+
         return ((base*altura)/2);
     }
 
