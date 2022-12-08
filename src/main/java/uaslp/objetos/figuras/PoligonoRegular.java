@@ -5,10 +5,12 @@ public class PoligonoRegular extends Figura{
     private int numeroDeLados;
 
     public PoligonoRegular(int numeroDeLados) {
+        super("Poligono Regular");
         this.numeroDeLados = numeroDeLados;
     }
 
     public PoligonoRegular(int numeroDeLados, double lado) {
+        super("Poligono Regular");
         this.numeroDeLados = numeroDeLados;
         this.lado = lado;
     }
